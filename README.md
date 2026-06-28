@@ -31,14 +31,14 @@
 
 - `CLAUDE.md` — Claude Code への共有指示テンプレート
 - `.claude/skills/` — 対話式日記 / 週次レビュー / ペルソナ構築の3スキル（汎用版）
-- `.claude/rules/` — 方法論ルール（mcp-vs-skills）＋各種フォーマットの型
+- `.claude/rules/` — 方法論ルール（mcp-vs-skills）＋対話の振る舞いルール（unknown-term-lookup）＋各種フォーマットの型
 - `.claude/config/context.example.yaml` — 全スキルが共有するコンテキストの雛形
 - `journal/` `ideas/` `projects/` `persona/` — 各ディレクトリの役割を README で説明
 
 ## 使い方
 
 1. このリポジトリを clone（またはテンプレートとして利用）する。
-2. `.claude/config/context.example.yaml` を `context.yaml` にコピーし、自分の関心・プロジェクトを記入する。
+2. `.claude/config/context.example.yaml` を同じ場所に `.claude/config/context.yaml` としてコピーし、自分の関心・プロジェクトを記入する。
 3. Claude Code で `/journal` `/weekly-review` `/persona` を起動する。
 4. 自分の運用に合わせて `CLAUDE.md`・`rules`・`skills` を調整する。
 
@@ -46,6 +46,7 @@
 
 - **補正ルール**（AI に自分を正しく読ませる）— 個人の例を含むため、汎用化してから順次公開します。設計の考え方は上記の記事と続編で書きます。
 - finance / 趣味推薦などドメイン別のスキル。
+- `/trend`（トレンド収集）・`/improve`（環境改善）などの周辺スキル — 本テンプレには未収録です。`context.yaml` の `sources` / `improvement_backlog` は、それらを自分で足したとき用の足場として置いてあります。
 
 ## プライバシー
 

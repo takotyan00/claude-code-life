@@ -8,7 +8,7 @@ interests:
   - 例: 生成AI / Claude Code
   - 例: 投資
 
-# 情報ソース（トレンド収集などに使う）
+# 情報ソース（/trend 等のトレンド収集スキルを自分で足したとき用。本テンプレ同梱の3スキルは未使用）
 sources:
   - 例: Hacker News
   - 例: Reddit
@@ -25,5 +25,5 @@ active_projects:
 # 繰り返し出現するテーマ（/weekly-review が追記・整理）
 recurring_themes: []
 
-# 開発ワークフローの改善バックログ（/weekly-review が追記、/improve が消化）
+# 開発ワークフローの改善バックログ（/weekly-review が追記。消化用 /improve は本テンプレ未収録＝自分で足したとき用）
 improvement_backlog: []

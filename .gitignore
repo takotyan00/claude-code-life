@@ -3,12 +3,11 @@
 *.local.yaml
 
 # 個人の運用データ（テンプレート利用者が自分のものを置く想定。誤コミット防止）
+# persona/ は最も機微度が高いため README 以外まるごと除外（chapters/dimensions/insights/profile.yaml 等）
 journal/**/*.md
 !journal/README.md
-persona/chapters/
-persona/dimensions/
-persona/insights/
-persona/relationships/
+persona/**
+!persona/README.md
 
 # 環境・依存
 .venv/

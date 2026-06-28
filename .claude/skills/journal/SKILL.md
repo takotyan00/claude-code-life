@@ -44,6 +44,7 @@ allowed-tools:
 `active_projects` の各プロジェクトについて、**ユーザーに聞かずに** git log を収集する:
 
 - `git -C {path} log --oneline --all --since="{last_run}" --until="{now}"`
+- `path` が存在しない・git リポジトリでない場合は**黙ってスキップ**する（context.yaml の例のまま未編集でもエラーにしない）。
 - 変更がないプロジェクトはスキップ。
 
 収集したコミットを **repo 別ではなくテーマ別に集約**する（feat→機能実装 / fix→修正 / refactor・chore→保守 / deploy・ci→インフラ / test→検証 / docs→ドキュメント）。

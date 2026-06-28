@@ -1,0 +1,24 @@
+# 機微情報（実名・個人特定情報の分離先・絶対にコミットしない）
+*.local.md
+*.local.yaml
+
+# 個人の運用データ（テンプレート利用者が自分のものを置く想定。誤コミット防止）
+journal/**/*.md
+!journal/README.md
+persona/chapters/
+persona/dimensions/
+persona/insights/
+persona/relationships/
+
+# 環境・依存
+.venv/
+node_modules/
+__pycache__/
+.env
+.env.*
+
+# OS / エディタ
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

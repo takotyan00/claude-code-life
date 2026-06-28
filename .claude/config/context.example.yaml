@@ -1,0 +1,29 @@
+# context.yaml — 全スキルが共有するコンテキスト
+# このファイルを context.yaml にコピーして、自分の内容に書き換えてください。
+# 全スキル（/journal, /weekly-review, /persona ...）がここを参照して有機的につながります。
+
+# 関心分野（/journal のタグ付け、/weekly-review の関心変化検出に使う）
+interests:
+  - 例: 個人開発
+  - 例: 生成AI / Claude Code
+  - 例: 投資
+
+# 情報ソース（トレンド収集などに使う）
+sources:
+  - 例: Hacker News
+  - 例: Reddit
+  - 例: ArXiv
+
+# 開発中のプロジェクト（/journal が git log を自動収集、/weekly-review が進捗同期）
+active_projects:
+  - name: example-project
+    path: ~/dev/example-project
+    focus: 例: MVP を一気通貫で作る
+    development_status: active   # active / paused / planning / completed
+    user_facing: planning        # 開発状況とは別軸（公開・利用の状況）
+
+# 繰り返し出現するテーマ（/weekly-review が追記・整理）
+recurring_themes: []
+
+# 開発ワークフローの改善バックログ（/weekly-review が追記、/improve が消化）
+improvement_backlog: []

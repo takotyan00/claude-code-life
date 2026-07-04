@@ -1,3 +1,5 @@
+**日本語** | [English](README.en.md)
+
 # claude-code-life
 
 > Claude Code で「人生を1つのリポジトリ」として運用するための、AIネイティブな個人運用フレームワーク（テンプレート）。
@@ -32,6 +34,7 @@
 - `CLAUDE.md` — Claude Code への共有指示テンプレート
 - `.claude/skills/` — 対話式日記 / 週次レビュー / ペルソナ構築の3スキル（汎用版）
 - `.claude/rules/` — 方法論ルール（mcp-vs-skills）＋対話の振る舞いルール（unknown-term-lookup）＋各種フォーマットの型
+- `.claude/rules/correction-rules/` — AI に自分を正しく読ませる補正ルール。汎用化した実例を1本同梱（`example-understated-expression.md`）
 - `.claude/config/context.example.yaml` — 全スキルが共有するコンテキストの雛形
 - `journal/` `ideas/` `projects/` `persona/` — 各ディレクトリの役割を README で説明
 
@@ -44,7 +47,7 @@
 
 ## まだ入っていないもの（順次「おろしていく」）
 
-- **補正ルール**（AI に自分を正しく読ませる）— 個人の例を含むため、汎用化してから順次公開します。設計の考え方は上記の記事と続編で書きます。
+- **補正ルールの追加分** — 汎用化した実例を1本すでに同梱しています（`.claude/rules/correction-rules/` 参照）。残りは個人の例を含むため、汎用化してから順次おろします。設計の考え方は上記の記事と続編で書きます。
 - finance / 趣味推薦などドメイン別のスキル。
 - `/trend`（トレンド収集）・`/improve`（環境改善）などの周辺スキル — 本テンプレには未収録です。`context.yaml` の `sources` / `improvement_backlog` は、それらを自分で足したとき用の足場として置いてあります。
 

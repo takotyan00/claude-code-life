@@ -1,4 +1,4 @@
-**日本語** | [English](README.en.md)
+**日本語** | [English](https://github.com/takotyan00/claude-code-life/blob/main/README.en.md)
 
 # claude-code-life
 

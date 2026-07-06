@@ -23,9 +23,11 @@
 ├── ideas/                        # アイデアストック
 ├── projects/                     # 各プロジェクトのメタ情報
 ├── persona/                      # 対話型ペルソナ（自己分析）
+├── memory/                       # Tier-2 ローカルメモリ（1事実1ファイル・必要時だけ引く）
 └── .claude/
     ├── config/context.example.yaml  # 全スキルが共有するコンテキストの雛形
     ├── rules/                    # エージェントに注入する振る舞いのルール
+    ├── hooks/                    # 常時は薄く/必要時に厚く（メモリ自動呼出フック等）
     └── skills/                   # 用途別エージェント（/journal, /weekly-review, /persona）
 ```
 
@@ -35,6 +37,8 @@
 - `.claude/skills/` — 対話式日記 / 週次レビュー / ペルソナ構築の3スキル（汎用版）
 - `.claude/rules/` — 方法論ルール（mcp-vs-skills）＋対話の振る舞いルール（unknown-term-lookup）＋各種フォーマットの型
 - `.claude/rules/correction-rules/` — AI に自分を正しく読ませる補正ルール。汎用化した実例を1本同梱（`example-understated-expression.md`）
+- `.claude/hooks/` — 「常時は薄く・必要時に厚く」の仕掛け。`memory-recall.py`（関連するメモリだけを自動注入する `UserPromptSubmit` フック・外部依存なし）と、60行ルール／rules 分割／自己更新ループの配線メモ（[設計記事](https://zenn.dev/takotyan00/articles/claude-code-claude-md-design)）
+- `memory/` — Tier-2 ローカルメモリ（1事実1ファイル）。README 以外は `.gitignore` 済み
 - `.claude/config/context.example.yaml` — 全スキルが共有するコンテキストの雛形
 - `journal/` `ideas/` `projects/` `persona/` — 各ディレクトリの役割を README で説明
 

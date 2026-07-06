@@ -8,6 +8,9 @@ journal/**/*.md
 !journal/README.md
 persona/**
 !persona/README.md
+# memory/ は Tier-2 ローカルメモリ（1事実1ファイル）。README 以外は追跡しない
+memory/**
+!memory/README.md
 
 # 環境・依存
 .venv/

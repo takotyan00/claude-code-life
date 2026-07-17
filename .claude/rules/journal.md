@@ -1,13 +1,12 @@
 ## 日記フォーマット
 
 - ファイルパス: `journal/YYYY/MM/DD.md`
-- frontmatter 必須: `mood`（1-5）、`tags`、`highlights`、`logged_at`
+- frontmatter 必須: `tags`、`highlights`、`logged_at`
 
 ```yaml
 ---
 date: 2026-03-12
 logged_at: 2026-03-12T21:30   # /journal 起動時刻。次回の対象日ウィンドウ判定に使う
-mood: 4
 tags: [開発, アイデア]
 highlights:
   - 新しいプロジェクトを構想した

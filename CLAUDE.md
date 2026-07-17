@@ -34,7 +34,7 @@ Claude Code を「AI秘書」として、個人の運用（日記・自己分析
 ## Journal Rules
 
 - 会話から自動整形して `journal/YYYY/MM/DD.md` に保存する。
-- frontmatter（mood 1-5 / tags / highlights）を付ける。3行以上書けばOK。完璧を求めない。
+- frontmatter（tags / highlights）を付ける。3行以上書けばOK。完璧を求めない。
 - 感情・気づき・不満・反復パターンに注目する。
 
 ## Conventions

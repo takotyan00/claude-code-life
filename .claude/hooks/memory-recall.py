@@ -34,7 +34,7 @@ import os
 import json
 import re
 
-MAX_HITS = 5          # 注入する最大エントリ数
+MAX_HITS = 3          # 注入する最大エントリ数
 BODY_CHARS = 600      # 各本文の最大注入文字数
 MIN_SCORE = 1         # これ未満は無視
 

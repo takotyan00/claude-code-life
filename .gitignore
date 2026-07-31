@@ -11,6 +11,9 @@ persona/**
 # memory/ は Tier-2 ローカルメモリ（1事実1ファイル）。README 以外は追跡しない
 memory/**
 !memory/README.md
+# context.yaml は example をコピーして各自が埋める個別設定。追跡するのは example のみ
+.claude/config/context.yaml
+!.claude/config/context.example.yaml
 
 # 環境・依存
 .venv/
